@@ -22,6 +22,7 @@ namespace KOJS.Controllers
 
         public JsonResult GetIndex()
         {
+            db.Lookups.Add(new Lookup {Id=1,Key= "key1",Value ="value1" });
             return Json(db.Lookups.ToList(), JsonRequestBehavior.AllowGet);
         }
 

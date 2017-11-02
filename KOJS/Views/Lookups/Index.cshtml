@@ -14,13 +14,11 @@
         <th></th>
     </tr>
     <tbody data-bind="foreach: lookupCollection">
-        <tr>
-            <td data-bind="text: Key"></td>
-            <td data-bind="text: Value"></td>
-            <td>
-                <button class="btn btn-success">Edit</button>
-                <button class="btn btn-danger">Delete</button>
-            </td>
-        </tr>
+        <tr data-bind="template: { name: Mode, data: $data }"></tr>
     </tbody>
 </table>
+
+@section Scripts{
+    @Scripts.Render("~/bundles/knockout")
+    <script src="~/Scripts/App/AppKO.js"></script>
+}
