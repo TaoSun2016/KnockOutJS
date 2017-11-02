@@ -17,7 +17,7 @@ namespace KOJS.Controllers
         // GET: Lookups
         public ActionResult Index()
         {
-            return View(db.Lookups.ToList());
+            return View();
         }
 
         public JsonResult GetIndex()
