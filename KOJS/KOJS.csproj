@@ -149,9 +149,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MTB_ArticleController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\KOJSContext.cs" />
     <Compile Include="Models\MTB_Article.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -199,6 +201,11 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\MTB_Article\Create.cshtml" />
+    <Content Include="Views\MTB_Article\Delete.cshtml" />
+    <Content Include="Views\MTB_Article\Details.cshtml" />
+    <Content Include="Views\MTB_Article\Edit.cshtml" />
+    <Content Include="Views\MTB_Article\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
